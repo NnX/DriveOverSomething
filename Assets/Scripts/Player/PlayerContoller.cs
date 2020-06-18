@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PlayerContoller : BaseController
 {
+    public Transform bullet_StartPoint;
+    public GameObject bullet_Prefab;
+    public ParticleSystem shootFX;
 
     private Rigidbody someBody;
+
 
     void Start()
     {
@@ -16,6 +20,7 @@ public class PlayerContoller : BaseController
     {
         ChangeRotation();
         ControlMovementWithKeyboard();
+        ShootingControl();
     }
 
     void FixedUpdate()
@@ -70,6 +75,16 @@ public class PlayerContoller : BaseController
         } else
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, 0f, 0f), Time.deltaTime * rotationSpeed);
+        }
+    }
+
+    public void ShootingControl()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            GameObject bullet = Instantiate(bullet_Prefab, bullet_StartPoint.position, Quaternion.identity);
+            bullet.GetComponent<BulletScript>().Move(2000f);
+            shootFX.Play();
         }
     }
 }
