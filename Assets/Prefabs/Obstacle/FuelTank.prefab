@@ -109,6 +109,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-1095047052665015799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125776186080654749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7adb46b490bab5a4b9d991a9bfda03df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 1242859992640132, guid: a30f4231b59ac4cac82b2b2931f7a678,
+    type: 3}
+  damage: 20
 --- !u!1001 &6125776186080752445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118,7 +133,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: df723fb4eb7d26b46aa71d9ed2d6f29f, type: 3}
       propertyPath: m_Name
-      value: Fuel tank
+      value: FuelTank
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: df723fb4eb7d26b46aa71d9ed2d6f29f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df723fb4eb7d26b46aa71d9ed2d6f29f, type: 3}
       propertyPath: m_LocalPosition.x
