@@ -21592,6 +21592,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4236085627205302}
+  - component: {fileID: 1047570088}
+  - component: {fileID: 802730522}
   m_Layer: 0
   m_Name: GroundBlock Main
   m_TagString: Untagged
@@ -21623,6 +21625,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!114 &1047570088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818486636018010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c406fe0ef12658a4f966965baaa32ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherBlock: {fileID: 0}
+  blockLength: 200
+--- !u!114 &802730522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818486636018010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c406fe0ef12658a4f966965baaa32ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherBlock: {fileID: 0}
+  blockLength: 200
 --- !u!1 &1818675529541416
 GameObject:
   m_ObjectHideFlags: 0
