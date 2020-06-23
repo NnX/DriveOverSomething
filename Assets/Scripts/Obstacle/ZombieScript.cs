@@ -53,8 +53,7 @@ public class ZombieScript : MonoBehaviour
             Instantiate(bloodFx, transform.position, Quaternion.identity);
             Invoke("DeactivateGameObject", 3f);
 
-            // increse score
-
+            GameplayController.instance.IncreaseScore();
             Die();
         }
     }
